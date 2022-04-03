@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("WebBack6.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+
+h1 {
+    font-size: 45px;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+}
+
+#divider {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+}
+
+#editForm {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+}
+
+article {
+    backdrop-filter: blur(12px) saturate(200%);
+    -webkit-backdrop-filter: blur(12px) saturate(200%);
+    background-color: rgba(40, 48, 66, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+section {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+h2{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+input,
+select {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+input:hover:not(:focus),
+select:hover:not(:focus) {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+ ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+a {
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: var(--c2);
+}
+
+a:hover {
+    transition: 0.2s;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#button {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.2s;
+    color: white;
+}
+
+#button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: white;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+}
+
+td,
+th {
+    padding: 8px 12px 8px 12px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+tr th {
+    font-size: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+header {
+    height: 100px;
+}
+
+nav {
+    background-color: rgba(32, 43, 65, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+figure {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+}
+
+img {
+    filter: invert(1);
+    transition: 0.2s;
+}
+
+img:hover {
+    opacity: 70%;
+}
+
+ul {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: rgb(63, 62, 62);
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+table a {
+    padding: 12px 3.1px 1px 3.4px;
+}
+th, td:nth-child(2n+0){
+    padding: 5px;
+}
+.pic{
+    max-height: 180px;
+    max-width: 140px;
+    filter: none;
+}
+span{
+    color: red;
+}
+th{
+    transition: 0.1s;
+}
+th:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+th tr, td:nth-child(1){
+    position: relative;
+    margin: 0;
+    max-width: 240px;
+    max-height: 180px;
+    text-align: center;
+}
+th tr, td:nth-child(1) .pic{
+    border-radius: 8px;
+}
+.pic, .edit{
+    transition: 0.3s;
+}
+span.edit{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: transparent;
+    transform: translateX(-40%);
+}
+a.overlay{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 0;
+    padding: 0;
+    opacity: 1;
+}
+.pic:hover + .edit, .edit:hover{
+    color: white;
+    font-size: 20px;
+}
+.pic:hover{
+   filter:blur(1.2px);
+}
+
+aside{
+    backdrop-filter: blur(12px) saturate(200%);
+    -webkit-backdrop-filter: blur(12px) saturate(200%);
+    background: rgb(40,48,66);
+    background: linear-gradient(45deg, rgba(40, 48, 66, 0.767) 0%, rgba(55, 0, 255, 0.733) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s;
+    animation: rr 1s infinite;
+}
+.fig{
+    cursor: none;
+}
+aside > figure img{
+    height: 60px;
+}
+@keyframes rr {
+    0%{
+        background: linear-gradient(45deg, rgba(40, 48, 66, 0.767) 0%, rgba(55, 0, 255, 0.733) 100%);
+    }
+    50%{
+        background: linear-gradient(45deg, rgba(40, 48, 66, 0.767) 100%, rgba(55, 0, 255, 0.733) 0%);
+    }
+    100%{
+        background: linear-gradient(45deg, rgba(40, 48, 66, 0.767) 0%, rgba(55, 0, 255, 0.733) 100%);
+    }
+}
